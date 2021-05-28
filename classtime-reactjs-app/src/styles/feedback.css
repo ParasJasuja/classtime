@@ -1,0 +1,23 @@
+.feedback-container {
+  width: clamp(280px, 90%, 750px);
+  margin: 0 auto;
+  padding-top: 24px;
+  color: white;
+}
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.feedback > span {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.feedback textarea {
+  width: 80%;
+  margin: 10px 0;
+}

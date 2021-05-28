@@ -1,0 +1,42 @@
+.More{
+    height: 100%;
+    width: clamp(280px , 90% , 750px);
+    margin: auto;
+    padding-top: 24px;
+}
+.mobile-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    margin: 24px 0;
+}
+.mobile-text>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.mobile-text input{
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 16px;
+    width: clamp(200px,90%,350px );
+    padding: 10px 12px;
+    margin: 16px 0;
+    outline: none;
+    border: none;
+}
+.mobile-text button{
+    background-color: var(--active-link);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    width: clamp(200px,90%,350px );
+    padding: 8px;
+    font-size: 1rem;
+}

@@ -1,0 +1,93 @@
+.admin {
+  width: clamp(280px, 90%, 750px);
+  margin: 0 auto;
+  padding-top: 24px;
+  color: white;
+}
+.edit-view .crr-lec {
+  padding-top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.edit-view .crr-lec a {
+  flex: 1;
+}
+.edit-view .crr-lec .link {
+  flex: 1;
+  margin: 0;
+}
+.edit-button {
+  background-color: var(--secondary-color);
+  border: 0;
+  border-radius: 24px;
+  padding: 12px 24px;
+  outline: none;
+  color: white;
+  font: bold;
+  cursor: pointer;
+}
+.edit-button:focus {
+  border: 1px solid var(--active-color);
+}
+.admin-password {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(20px);
+}
+.require-password {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary-color);
+  height: 220px;
+  width: clamp(280px, 90%, 750px);
+  border: 2px solid var(--active-color);
+  border-radius: 32px;
+}
+.require-password > span {
+  width: clamp(250px, 90%, 400px);
+}
+#pass {
+  background-color: var(--secondary-color);
+  width: 100%;
+  color: white;
+  outline: none;
+  padding: 12px;
+  border: 0;
+  border-radius: 24px;
+}
+#pass:focus {
+  border: 1px solid var(--active-color);
+}
+.submit-button {
+  background-color: var(--active-link);
+  margin-top: 16px;
+  padding: 12px;
+  font-size: 14px;
+  width: 100%;
+}
+.submit-button:focus {
+  border: 1px solid var(--active-color);
+}
+.disable {
+  display: none;
+}
+
+.admin-control-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+.off {
+  background-color: var(--secondary-color);
+}

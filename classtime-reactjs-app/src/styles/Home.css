@@ -1,0 +1,135 @@
+.home {
+  width: clamp(280px, 90%, 750px);
+
+  margin: 0 auto;
+  padding-top: 24px;
+  color: white;
+}
+
+/* .current {
+  background-color: var(--primary-color);
+  padding: 24px;
+  border-radius: 16px;
+  margin: 24px 0;
+} */
+.upcoming {
+  max-height: 400px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-shadow: 0 5px 2px 2px var(--primary-color);
+}
+
+.link {
+  position: relative;
+  background-color: var(--active-link);
+  text-align: center;
+  border-radius: 24px;
+  padding: 8px 16px;
+  border: 1px solid var(--secondary-color);
+  margin: 16px 0 0 0;
+}
+
+.links-container {
+  padding: 16px 16px 32px;
+  max-height: 350px;
+  overflow-y: auto;
+  box-shadow: inset 0 10px 10px -10px var(--secondary-color);
+}
+.links-container::-webkit-scrollbar {
+  width: 5px;
+}
+.links-container::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  height: 50px;
+  border-radius: 5px;
+}
+
+.link-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.box {
+  flex: 1;
+  text-align: center;
+}
+.next-link {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px 16px;
+  margin: 0;
+}
+.open-in-new-icon {
+  right: 16px;
+  top: 10px;
+}
+.next-link:hover {
+  color: var(--active-link);
+  border: 1px solid var(--active-link);
+}
+.disabled:hover .next-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  cursor: default;
+}
+
+.filter {
+  display: flex;
+  padding: 0 5px;
+  margin: 0 16px 0 16px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#select-class,
+#semester,
+#group {
+  border: 0;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  flex: 0 1;
+  color: white;
+  margin-top: 5px;
+}
+
+.refresh-btn {
+  position: absolute;
+  right: 0;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  color: white;
+}
+.refresh-btn:focus {
+  color: var(--active-color);
+}
+
+@media screen and (max-width: 800px) {
+  h4 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .upcoming {
+    padding: 24px 10px;
+  }
+  .filter {
+    margin: 0;
+  }
+  #select-class,
+  #semester,
+  #group {
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .links-container {
+    padding: 0 0 32px 0;
+  }
+  .refresh-btn {
+    right: -16px;
+  }
+}

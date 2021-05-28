@@ -1,0 +1,14 @@
+.Loading {
+  text-align: center;
+  margin: 10px;
+}
+.Loading-icon {
+  color: rgb(var(--active-color), 0, 0);
+  animation: rotate 1.5s infinite;
+  margin: 0 auto;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
